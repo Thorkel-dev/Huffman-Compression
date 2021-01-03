@@ -1,5 +1,5 @@
 import os as os  # Manipulation des fichiers/dossiers
-import winsound as sound  # Gestion des sons sous Window
+#import winsound as sound  # Gestion des sons sous Window
 import tkinter.messagebox as tkmessage  # Messages d'alertes
 import tkinter.filedialog as tkfile  # Récuperation des Chemins des fichiers
 import json as json  # Manipulation de dictionnaire dans des fichiers
@@ -8,7 +8,7 @@ import time as temps  # Capture de l'horloge de l'ordinateur
 from operator import itemgetter  # Permet de manipuler des objets pythons
 import tkinter as tk
 information = "Compression de Huffman\
-                \nRéalisé par Edouard GAUTIER et Antoine LAURENT\
+                \nRéalisé par Edouard GAUTIER et Anonyme\
                 \nPromotion Meitner, P2A\
                 \nProjet Maths-Info, année 2019"
 
@@ -92,19 +92,19 @@ class Compression():
         self.definir_entropie(self.dico_frequences)
         self.definir_longueur_symboles(self.dico_code)
         self.donne = f"\nCompression du fichier: \
-            {os.path.basename(self.fichier)}\
-                        \nFichier de taille:{self.fichier_taille:53} octets\
+           \t{os.path.basename(self.fichier)}\
+                        \nFichier de taille:\t\t\t{self.fichier_taille} octets\
                         \n\n1-Construction de l'arbre\
                         \nNombre d'octet différent:\
-                        {self.nb_octet_diff:17} octets\
-                        \nTemps d'éxcution:{self.chrono_1:39} s\
+                        {self.nb_octet_diff} octets\
+                        \nTemps d'éxcution:\t\t{self.chrono_1} s\
                         \n\n2-Ecriture du fichier .hf\
                         \nFichier de taille:\
-                        {self.fichier_compression_taille:30} octets\
-                        \nGain:{self.gain:68.2f} %\
-                        \nEntropie:{self.entropie:65.2f}\
-                        \nTaille moyenne d'un symbole:{self.longueur:28.2f}\
-                        \nTemps d'éxcution:{self.chrono_2:39} s"
+                        \t{self.fichier_compression_taille} octets\
+                        \nGain:\t\t\t\t{self.gain:.2f} %\
+                        \nEntropie:\t\t\t\t{self.entropie:.2f}\
+                        \nTaille moyenne d'un symbole:\t{self.longueur:.2f}\
+                        \nTemps d'éxcution:\t\t{self.chrono_2} s"
 
     def lecture_fichier(self, fichier):
         """
@@ -372,14 +372,14 @@ class Decompression():
         temps.stop()
         self.chrono = temps.chrono
         self.donne = f"\nDécompression du fichier:\
-            {os.path.basename(self.fichier)}\
+            \t{os.path.basename(self.fichier)}\
                         \n\nNom du fichier: \
-                        {os.path.basename(fichier_sortie)}\
+                        \t{os.path.basename(fichier_sortie)}\
                         \nDictionnaire de taille:\
-                        {taille_dictionnaire:24} octets\
+                        \t{taille_dictionnaire} octets\
                         \nFichier de taille:\
-                        {os.path.getsize(fichier_sortie):30} octets\
-                        \nTemps d'éxcution:{self.chrono:39} s"
+                        \t{os.path.getsize(fichier_sortie)} octets\
+                        \nTemps d'éxcution:\t\t{self.chrono} s"
 
 
 class Fenetre():
@@ -397,7 +397,7 @@ class Fenetre():
         can.pack(side=tk.TOP)
         frm_1 = tk.Frame(win)
         frm_1.pack(side=tk.TOP)
-        image = tk.PhotoImage(file='Programme\images\Logo.png')
+        image = tk.PhotoImage(file='Huffman\images\logo.png')
         can.create_image(195, 95, image=image)
         lab_1 = tk.Label(frm_1, text=information, justify="left")
         lab_1.pack()
