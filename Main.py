@@ -1,5 +1,5 @@
 import os as os  # Manipulation des fichiers/dossiers
-#import winsound as sound  # Gestion des sons sous Window
+import winsound as sound  # Gestion des sons sous Window
 import tkinter.messagebox as tkmessage  # Messages d'alertes
 import tkinter.filedialog as tkfile  # Récuperation des Chemins des fichiers
 import json as json  # Manipulation de dictionnaire dans des fichiers
