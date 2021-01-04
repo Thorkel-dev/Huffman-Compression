@@ -1,5 +1,5 @@
 # Huffman Compression
-<img src="https://img.shields.io/static/v1?style=flat&message=Python&logo=python&labelColor=FFD43B&color=FFD43B&logoColor=306998&label=%20"/> <img src="https://img.shields.io/github/v/tag/Edouardgautier/Huffman-Compression"/> <img src="https://img.shields.io/github/last-commit/Edouardgautier/Huffman-Compression"/>
+<img src="https://img.shields.io/static/v1?style=flat&message=Python&logo=python&labelColor=FFD43B&color=FFD43B&logoColor=306998&label=%20"/> [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d97a33e38cee4df8ba83c959b00b048d)](https://www.codacy.com/gh/EdouardGautier/Huffman-Compression/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EdouardGautier/Huffman-Compression&amp;utm_campaign=Badge_Grade) <img src="https://img.shields.io/github/v/tag/Edouardgautier/Huffman-Compression"/> <img src="https://img.shields.io/github/last-commit/Edouardgautier/Huffman-Compression"/>
 
 <p align="center">
 <img  src="images\logo.jpg" alt="ESEO Logo" width="400" height="">
